@@ -6,7 +6,7 @@
 /*   By: mvarga <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/25 21:33:02 by mvarga            #+#    #+#             */
-/*   Updated: 2017/03/11 18:25:36 by mvarga           ###   ########.fr       */
+/*   Updated: 2017/03/11 18:27:59 by mvarga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,10 +74,15 @@ void			ft_char(unsigned char c, va_list ap)
 	if (!c)
 		return ;
 	data = va_arg(ap, int);
-	str = ft_strnew(1);
-	*str = data;
-	ft_str_null(str);
-	free(str);
+	if (data > BYTE_ASCII)
+	{
+		str = ft_strnew(1);
+		*str = data;
+		ft_str_null(str);
+		free(str);
+	}
+	else
+		ft_pr_left_right(data, 1)
 }
 
 void			ft_no_conversion(char c)
