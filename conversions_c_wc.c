@@ -6,7 +6,7 @@
 /*   By: mvarga <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/25 21:33:02 by mvarga            #+#    #+#             */
-/*   Updated: 2017/03/11 18:28:42 by mvarga           ###   ########.fr       */
+/*   Updated: 2017/03/11 18:33:27 by mvarga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,10 +63,27 @@ static void		ft_pr_left_right(uintmax_t c, size_t len)
 	else
 		ft_ascii_utf(c);
 }
+/*
+void			ft_wchar(uintmax)
+{
+	size_tlen;
 
+	len = 0;
+	data = ft_get_unsigned_from_va_list(c, ap);
+	if (data <= BYTE_ASCII)
+		len = 1;
+	else if (data <= BYTE_UTF2)
+		len = 2;
+	else if (data <= BYTE_UTF3)
+		len = 3;
+	else if (data <= BYTE_UTF4)
+		len = 4;
+	ft_pr_left_right(data, len);
+}
+*/
 void			ft_char(unsigned char c, va_list ap)
 {
-	int			data;
+	uintmax_t	data;
 	char		*str;
 	size_t		len;
 
@@ -82,7 +99,7 @@ void			ft_char(unsigned char c, va_list ap)
 		free(str);
 	}
 	else
-		ft_pr_left_right(data, 1);
+		ft_pr_left_right(data, len);
 }
 
 void			ft_no_conversion(char c)
