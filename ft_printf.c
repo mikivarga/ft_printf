@@ -6,7 +6,7 @@
 /*   By: mvarga <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 16:15:58 by mvarga            #+#    #+#             */
-/*   Updated: 2017/03/11 12:21:29 by mvarga           ###   ########.fr       */
+/*   Updated: 2017/03/11 18:18:06 by mvarga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char			g_arr_flags[SIZE] = {
 };
 
 void			(*g_pf[14])(unsigned char, va_list) = {
-	ft_char, ft_wchar, ft_str, ft_wstr, ft_signed_digit, ft_signed_digit,
+	ft_char, ft_char, ft_str, ft_wstr, ft_signed_digit, ft_signed_digit,
 	ft_signed_digit, ft_unsigned_digit, ft_unsigned_digit, ft_o_digit,
 	ft_o_digit, ft_x_digit, ft_big_x_digit, ft_pointer
 };
