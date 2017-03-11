@@ -6,7 +6,7 @@
 /*   By: mvarga <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/25 21:33:02 by mvarga            #+#    #+#             */
-/*   Updated: 2017/03/11 18:39:31 by mvarga           ###   ########.fr       */
+/*   Updated: 2017/03/11 18:40:39 by mvarga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ static void		ft_pr_left_right(uintmax_t c, size_t len)
 		ft_ascii_utf(c);
 }
 
-static void		ft_wchar(uintmax_t data)
+static size_t	ft_wchar(uintmax_t data)
 {
 	if (data <= BYTE_ASCII)
 		len = 1;
