@@ -6,7 +6,7 @@
 /*   By: mvarga <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/25 21:33:02 by mvarga            #+#    #+#             */
-/*   Updated: 2017/03/11 18:07:47 by mvarga           ###   ########.fr       */
+/*   Updated: 2017/03/11 18:13:33 by mvarga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,7 @@ void			ft_wchar(unsigned char c, va_list ap)
 
 	len = 0;
 	data = ft_get_unsigned_from_va_list(c, ap);
+
 	if (data <= BYTE_ASCII)
 		len = 1;
 	else if (data <= BYTE_UTF2)
@@ -89,9 +90,9 @@ void			ft_char(unsigned char c, va_list ap)
 	size_t		len;
 
 	len = 1;
-	if (g_size_type == 'l')
-		ft_wchar(c, ap);
-	else
+//	if (g_size_type == 'l' && data > )
+//		ft_wchar(c, ap);
+//	else
 	{
 		data = ft_get_unsigned_from_va_list(c, ap);
 		if (data > BYTE_ASCII)
