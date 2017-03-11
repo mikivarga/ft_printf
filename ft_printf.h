@@ -6,7 +6,7 @@
 /*   By: mvarga <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 16:13:05 by mvarga            #+#    #+#             */
-/*   Updated: 2017/03/11 16:52:11 by mvarga           ###   ########.fr       */
+/*   Updated: 2017/03/11 18:38:29 by mvarga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,6 @@ const char	*ft_flg_min_plus_space_zero_prefix(const char *str);
 const char	*ft_flg_width(const char *str, va_list ap);
 const char	*ft_flg_precision(const char *str, va_list ap);
 void		ft_char(unsigned char c, va_list ap);
-void		ft_wchar(unsigned char c, va_list ap);
 void		ft_no_conversion(char c);
 void		ft_str(unsigned char c, va_list ap);
 void		ft_wstr(unsigned char c, va_list ap);
