@@ -6,7 +6,7 @@
 /*   By: mvarga <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/25 21:33:02 by mvarga            #+#    #+#             */
-/*   Updated: 2017/03/11 18:27:59 by mvarga           ###   ########.fr       */
+/*   Updated: 2017/03/11 18:28:42 by mvarga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ void			ft_char(unsigned char c, va_list ap)
 		free(str);
 	}
 	else
-		ft_pr_left_right(data, 1)
+		ft_pr_left_right(data, 1);
 }
 
 void			ft_no_conversion(char c)
